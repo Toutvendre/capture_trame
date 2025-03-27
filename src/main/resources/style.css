@@ -1,0 +1,260 @@
+/* Style global pour le fond */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #1e2329, #2d343f);
+    /* -fx-background-image: url('texture.png'); */
+    /* Commenté pour éviter l'erreur */
+    -fx-background-size: cover;
+    -fx-padding: 30px;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* Style de l’en-tête */
+.header {
+    -fx-background-color: rgba(26, 31, 39, 0.9);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #45b7d1;
+    -fx-border-width: 1.5;
+    -fx-effect: dropshadow(gaussian, rgba(69, 183, 209, 0.3), 10, 0, 0, 2);
+}
+
+/* Style de la section des actions */
+.action-section {
+    -fx-background-color: rgba(30, 35, 41, 0.9);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #5e7290;
+    -fx-border-width: 1.5;
+    -fx-effect: innershadow(gaussian, rgba(69, 183, 209, 0.25), 12, 0, 0, 0);
+}
+
+/* Style de la barre de navigation */
+.nav-bar {
+    -fx-background-color: rgba(26, 31, 39, 0.9);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #45b7d1;
+    -fx-border-width: 1.5;
+    -fx-effect: dropshadow(gaussian, rgba(69, 183, 209, 0.3), 10, 0, 0, 2);
+}
+
+/* Style de la barre d’outils dans l’analyse */
+.toolbar {
+    -fx-background-color: rgba(30, 35, 41, 0.9);
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #5e7290;
+    -fx-border-width: 1.5;
+    -fx-effect: innershadow(gaussian, rgba(69, 183, 209, 0.25), 10, 0, 0, 0);
+}
+
+/* Style de la barre latérale */
+.sidebar {
+    -fx-background-color: rgba(26, 31, 39, 0.95);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #5e7290;
+    -fx-border-width: 1.5;
+    -fx-effect: innershadow(gaussian, rgba(69, 183, 209, 0.25), 12, 0, 0, 0);
+}
+
+/* Style des boutons */
+.button {
+    -fx-background-color: linear-gradient(to right, #2a3442, #3b4656);
+    -fx-text-fill: #b8c6db;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #5e7290;
+    -fx-border-width: 1.5;
+    -fx-padding: 15 20 15 20;
+    -fx-effect: dropshadow(gaussian, rgba(94, 114, 144, 0.3), 10, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #e94560, #ff6b81);
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #ff6b81;
+    -fx-effect: dropshadow(gaussian, rgba(233, 69, 96, 0.6), 15, 0, 0, 2);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: all 0.3s ease;
+}
+
+.button:disabled {
+    -fx-background-color: #2f3845;
+    -fx-text-fill: #6b7280;
+    -fx-border-color: #3b4656;
+    -fx-effect: none;
+    -fx-opacity: 0.6;
+}
+
+/* Style du label de statut */
+.label {
+    -fx-font-family: "Orbitron", "Courier New";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to right, #b8c6db, #e94560);
+    -fx-background-color: rgba(26, 31, 39, 0.85);
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(184, 198, 219, 0.4), 8, 0, 0, 0);
+}
+
+/* Style de la table avec effet de lueur */
+.table-view-glow {
+    -fx-background-color: #2d343f;
+    -fx-border-color: #45b7d1;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(69, 183, 209, 0.5), 15, 0, 0, 0);
+    -fx-pref-height: 0;
+    -fx-max-height: Infinity;
+}
+
+.table-view-glow .column-header-background {
+    -fx-background-color: #252b33;
+    -fx-border-color: #45b7d1;
+    -fx-border-width: 0 0 1.5 0;
+}
+
+.table-view-glow .column-header .label {
+    -fx-text-fill: #45b7d1;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px;
+}
+
+.table-view-glow .table-cell {
+    -fx-text-fill: #d9d9d9;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 12px;
+    -fx-alignment: center;
+    -fx-border-color: #3c444f;
+    -fx-padding: 6px;
+}
+
+/* Style de la table (pour les tables sans effet de lueur) */
+.table-view {
+    -fx-background-color: #2d343f;
+    -fx-border-color: #45b7d1;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-pref-height: 0;
+    -fx-max-height: Infinity;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #252b33;
+    -fx-border-color: #45b7d1;
+    -fx-border-width: 0 0 1.5 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #45b7d1;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #d9d9d9;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 12px;
+    -fx-alignment: center;
+    -fx-border-color: #3c444f;
+    -fx-padding: 6px;
+}
+
+.table-row-cell {
+    -fx-background-color: #2d343f;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #363d47;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #ff4757;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(255, 71, 87, 0.5), 8, 0.2, 0, 0);
+}
+
+/* Scrollbar stylée */
+.table-view .scroll-bar:vertical {
+    -fx-background-color: #2d343f;
+    -fx-pref-width: 12px;
+}
+
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #45b7d1;
+    -fx-background-radius: 6;
+    -fx-background-insets: 2;
+}
+
+.table-view .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #ff4757;
+}
+
+/* Style des tooltips */
+.tooltip {
+    -fx-background-color: #2d343f;
+    -fx-text-fill: #b8c6db;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #45b7d1;
+    -fx-border-width: 1.5;
+    -fx-effect: dropshadow(gaussian, rgba(69, 183, 209, 0.3), 8, 0, 0, 0);
+}
+
+/* Style des ComboBox */
+.combo-box {
+    -fx-background-color: #2d343f;
+    -fx-border-color: #45b7d1;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #d9d9d9;
+    -fx-background-color: #2d343f;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #ff4757;
+    -fx-text-fill: #ffffff;
+}
+
+/* Style des TextField */
+.text-field {
+    -fx-background-color: #2d343f;
+    -fx-border-color: #45b7d1;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: #d9d9d9;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+}
+
+.text-field:focused {
+    -fx-border-color: #ff4757;
+    -fx-effect: dropshadow(gaussian, rgba(255, 71, 87, 0.5), 8, 0.2, 0, 0);
+}
